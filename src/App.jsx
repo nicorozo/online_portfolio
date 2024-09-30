@@ -1,6 +1,7 @@
+import "./App.css";
 function App() {
   return (
-    <>
+    <section className="hero">
       <a href="/">
         <span>Nico Rozo</span>
       </a>
@@ -14,7 +15,7 @@ function App() {
       <a href="/about">
         <span>About Me</span>
       </a>
-    </>
+    </section>
   );
 }
 

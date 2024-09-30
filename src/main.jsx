@@ -1,6 +1,10 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
 import DevPage from "./pages/Dev/DevPage.jsx";
@@ -10,6 +14,10 @@ import AboutPage from "./pages/About/AboutPage.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Navigate to="/online_portfolio" replace />, // Redirect from "/" to "/online_portfolio"
+  },
+  {
+    path: "/online_portfolio",
     element: <App />,
     errorElement: <div>404 Not Found</div>,
   },
