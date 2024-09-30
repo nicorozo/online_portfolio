@@ -59,3 +59,10 @@ button:focus-visible {
 @media screen and (max-width:620px) {
   
 }
+
+/* utils */
+.logo{
+  font-weight: bold;
+  color: white;
+  font-size: 4rem;
+}

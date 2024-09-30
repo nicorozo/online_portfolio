@@ -1,17 +1,20 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  text-align: center;
+
 }
 .hero{
   box-sizing: border-box;
   width: 100vw;
   height: 100vh;
-  background: url("/DSC03454.jpg") center;
+  background:linear-gradient(0deg, rgba(0, 77, 192, 0.3), rgba(41, 41, 41, 0.568)),url("/DSC03454.jpg")  ;
   background-repeat: no-repeat;
   background-size: cover;
+
   padding: 2rem 1.5rem;
-  display: grid;
+  display: flex;
+  flex-direction:column ;
+  justify-content: start;
   
 }
 
