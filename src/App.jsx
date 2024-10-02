@@ -4,17 +4,25 @@ import Logo from "./utils/Logo";
 function App() {
   return (
     <section className="hero">
-      <Logo />
-
-      <a href="/dev">
-        <span>Web Developement</span>
-      </a>
-      <a href="/photography">
-        <span>Photography</span>
-      </a>
-      <a href="/about">
-        <span>About Me</span>
-      </a>
+      <nav className="hero_navbar">
+        <a href="/online_portfolio/about">
+          <span>About</span>
+        </a>
+        <a href="/online_portfolio/photography">
+          <span>Photography</span>
+        </a>
+        <a href="/online_portfolio/dev">
+          <span>WebDev</span>
+        </a>
+      </nav>
+      <div className="hero_logo-div">
+        <Logo />
+        <div className="hero_logo-div_span-div">
+          <span>PHOTOGRAPHER</span>
+          <span> / </span>
+          <span>DEVELOPER</span>
+        </div>
+      </div>
     </section>
   );
 }

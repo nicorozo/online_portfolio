@@ -22,17 +22,17 @@ const router = createBrowserRouter([
     errorElement: <div>404 Not Found</div>,
   },
   {
-    path: "/dev",
+    path: "/online_portfolio/dev",
     element: <DevPage></DevPage>,
     errorElement: <div>404 Not Found</div>,
   },
   {
-    path: "/photography",
+    path: "/online_portfolio/photography",
     element: <PhotohtaphyPage />,
     errorElement: <div>404 Not Found</div>,
   },
   {
-    path: "/about",
+    path: "/online_portfolio/about",
     element: <AboutPage />,
     errorElement: <div>404 Not Found</div>,
   },

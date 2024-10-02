@@ -15,28 +15,30 @@
   display: flex;
   flex-direction:column ;
   justify-content: start;
+
   
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero_navbar{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex: 1;
+}
+.hero_logo-div{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  flex: 10;
+  align-items: center;
+}
+.hero_logo-div_span-div{
+  display: flex;
+  color: yellow;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
-}
+
+
+
