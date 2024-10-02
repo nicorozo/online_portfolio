@@ -1,6 +1,7 @@
+import "./utils.css";
 const Logo = () => {
   return (
-    //Logo styles in main.css
+    //Logo styles in utils.css
     <a href="/" className="logo">
       Nico Rozo
     </a>

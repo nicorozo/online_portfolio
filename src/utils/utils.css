@@ -1,0 +1,42 @@
+.logo{
+    font-weight: bold;
+    color: white;
+    font-size: 4rem;
+  }
+
+/* NavPages */
+
+.nav_pages{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: var(--third-color);
+    align-items: center;
+}
+.nav_pages .logo{
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('parallax1.jpg');
+    
+    /* Full height */
+    height: 100vh;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2rem 0px;
+    border-radius: 15px;
+  }
+  /* @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  } */
