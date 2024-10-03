@@ -8,27 +8,27 @@ import PhotohtaphyPage from "./pages/Photography/PhotohtaphyPage.jsx";
 import AboutPage from "./pages/About/AboutPage.jsx";
 
 const router = createHashRouter([
-  {
+  /*   {
     path: "/",
     element: <Navigate to="/online_portfolio" replace />, // Redirect from "/" to "/online_portfolio"
-  },
+  }, */
   {
-    path: "/online_portfolio",
+    path: "/",
     element: <App />,
     errorElement: <div>404 Not Found</div>,
   },
   {
-    path: "/online_portfolio/dev",
+    path: "/dev",
     element: <DevPage></DevPage>,
     errorElement: <div>404 Not Found</div>,
   },
   {
-    path: "/online_portfolio/photography",
+    path: "/photography",
     element: <PhotohtaphyPage />,
     errorElement: <div>404 Not Found</div>,
   },
   {
-    path: "/online_portfolio/about",
+    path: "/about",
     element: <AboutPage />,
     errorElement: <div>404 Not Found</div>,
   },

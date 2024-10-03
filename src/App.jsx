@@ -5,13 +5,13 @@ function App() {
   return (
     <section className="hero">
       <nav className="hero_navbar">
-        <a href="/online_portfolio/about">
+        <a href="#/about">
           <span>About</span>
         </a>
-        <a href="/online_portfolio/photography">
+        <a href="#/photography">
           <span>Photography</span>
         </a>
-        <a href="/online_portfolio/dev">
+        <a href="#/dev">
           <span>WebDev</span>
         </a>
       </nav>
