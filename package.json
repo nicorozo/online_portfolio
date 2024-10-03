@@ -1,6 +1,7 @@
 {
   "name": "online-cv",
   "private": true,
+  "homepage": "https://nicorozo.github.io/online_portfolio/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

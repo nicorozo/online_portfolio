@@ -1,17 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Navigate,
-} from "react-router-dom";
+import { createHashRouter, RouterProvider, Navigate } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
 import DevPage from "./pages/Dev/DevPage.jsx";
 import PhotohtaphyPage from "./pages/Photography/PhotohtaphyPage.jsx";
 import AboutPage from "./pages/About/AboutPage.jsx";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Navigate to="/online_portfolio" replace />, // Redirect from "/" to "/online_portfolio"
