@@ -3,7 +3,7 @@ const Logo = () => {
   return (
     //Logo styles in utils.css
     <a href="#/" className="logo">
-      Nico Rozo
+      NICO ROZO
     </a>
   );
 };

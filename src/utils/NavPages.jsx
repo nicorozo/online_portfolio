@@ -5,7 +5,8 @@ const NavPages = ({ pageName }) => {
   return (
     <div className="nav_pages">
       <Logo />
-      <span>/{pageName}</span>
+      <span>&nbsp;/&nbsp;</span>
+      <span className="nav_pages-page-name">{pageName}</span>
     </div>
   );
 };

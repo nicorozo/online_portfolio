@@ -1,7 +1,7 @@
 .logo{
     font-weight: bold;
     color: white;
-    font-size: 4rem;
+    font-size: 2rem;
   }
 
 /* NavPages */
@@ -14,10 +14,20 @@
     left: 0;
     color: var(--third-color);
     align-items: center;
+    margin: 1rem 2rem;
 }
 .nav_pages .logo{
-    font-size: 2rem;
+    font-size: 24px;
     margin-right: 5px;
+    letter-spacing: -2px;
+}
+.nav_pages-page-name{
+  font-size: 1rem;
+}
+.nav-spacer{
+  display: flex;
+  width: 100%;
+  height: 200px;
 }
 
 .parallax {

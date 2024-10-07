@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  padding: 2rem 1.5rem;
+  padding: 0;
   display: flex;
   flex-direction:column ;
   justify-content: start;
@@ -20,7 +20,6 @@
 }
 .hero_navbar{
   display: flex;
-  width: 100%;
   justify-content: space-around;
   flex: 1;
 }

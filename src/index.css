@@ -1,5 +1,5 @@
 :root {
-  font-family: "Roboto", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "JetBrains Mono", monospace, "Roboto", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   --main-color:rgb(23, 31, 44);

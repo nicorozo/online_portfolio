@@ -1,19 +1,21 @@
 import "./utils/Logo";
 import "./App.css";
-import Logo from "./utils/Logo";
+import NavPages from "./utils/NavPages";
+
 function App() {
   return (
     <section className="hero">
-      <nav className="hero_navbar">
+      <NavPages pageName={"main"} />
+      <div className="nav-spacer"></div>
+      {/* <nav className="hero_navbar">
         <a href="#/photography">
           <span>Photography</span>
         </a>
         <a href="#/dev">
           <span>WebDev</span>
         </a>
-      </nav>
+      </nav> */}
       <div className="hero_logo-div">
-        <Logo />
         <div className="hero_logo-div_span-div">
           <span>PHOTOGRAPHER</span>
           <span> / </span>
