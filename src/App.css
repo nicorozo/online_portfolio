@@ -7,37 +7,73 @@
   box-sizing: border-box;
   width: 100vw;
   height: 100vh;
-  background:linear-gradient(0deg, rgba(0, 77, 192, 0.3), rgba(41, 41, 41, 0.568)),url("/DSC03454.jpg")  ;
-  background-repeat: no-repeat;
-  background-size: cover;
-
   padding: 0;
   display: flex;
   flex-direction:column ;
   justify-content: start;
+  background-color: black;
+}
 
+.hero_main-container{
+  display: flex;
+  flex-grow: 1;
+  background:linear-gradient(0deg, rgba(26, 26, 26, 0.623), rgba(29, 29, 29, 0.87)),url("/DSC03454.jpg")  ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 1rem;
+  border-radius:5px ;
+  padding: 2rem 0;
+  position: relative;
+}
+.hero a{
+  display: flex;
+  flex: 1;
+  height: 100%;
+align-items: center;
+  flex-direction: column;
+}
+.a-webdev{
+  flex: 1;
   
 }
-.hero_navbar{
-  display: flex;
-  justify-content: space-around;
-  flex: 1;
+.hero_a-filler{
+  flex: 5;
 }
-.hero_logo-div{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  flex: 10;
-  align-items: center;
-}
-.hero_logo-div_span-div{
-  display: flex;
-  color: var(--third-color);
+.hero_a-span{
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 0.9;
+  text-shadow: rgb(24, 24, 24) 1px 6px 10px;
 }
 
-
-
+.hero_divider-div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F06711;
+  width: 2px;
+  height: 90%;
+}
+.hero_divider-div-shape{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F06711;
+  height: 8px;
+  width: 8px;
+}
+.hero_divider-div-shape.top{
+  top: 10%;
+}
+.hero_divider-div-shape.bottom{
+  top: 90%;
+}
 
 
 
