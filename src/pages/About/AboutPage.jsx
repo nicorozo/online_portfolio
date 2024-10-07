@@ -7,7 +7,7 @@ const AboutPage = () => {
       <div className="about_card">
         <img src="./aboutMe.jpg" alt="portrait" className="about_portrait" />
         <div className="about_text-container">
-          <h3 className="about-h3">A bit of me</h3>
+          <h3 className="about-h3"></h3>
           <p className="about-paragraph">
             I&apos;m a Colombian full-stack web developer, photographer, and
             entrepreneur with a diverse background and a passion for creativity.

@@ -5,9 +5,6 @@ function App() {
   return (
     <section className="hero">
       <nav className="hero_navbar">
-        <a href="#/about">
-          <span>About</span>
-        </a>
         <a href="#/photography">
           <span>Photography</span>
         </a>

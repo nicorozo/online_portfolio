@@ -6,6 +6,11 @@
   --clickable-one:white;
   --third-color: rgb(255,216,0);
 
+  --border-15:15px;
+  --border-10:10px;
+  --border-5:5px;
+
+
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);

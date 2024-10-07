@@ -2,7 +2,7 @@ import "./utils.css";
 const Logo = () => {
   return (
     //Logo styles in utils.css
-    <a href="/" className="logo">
+    <a href="#/" className="logo">
       Nico Rozo
     </a>
   );
