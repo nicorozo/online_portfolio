@@ -5,7 +5,6 @@ import App from "./App.jsx";
 import "./index.css";
 import DevPage from "./pages/Dev/DevPage.jsx";
 import PhotohtaphyPage from "./pages/Photography/PhotohtaphyPage.jsx";
-import AboutPage from "./pages/About/AboutPage.jsx";
 
 const router = createHashRouter([
   /*  {
@@ -25,11 +24,6 @@ const router = createHashRouter([
   {
     path: "/photography",
     element: <PhotohtaphyPage />,
-    errorElement: <div>404 Not Found</div>,
-  },
-  {
-    path: "/about",
-    element: <AboutPage />,
     errorElement: <div>404 Not Found</div>,
   },
 ]);

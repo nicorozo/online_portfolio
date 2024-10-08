@@ -1,0 +1,33 @@
+.photo_main{
+}
+.photo_hero-section{
+display: flex;
+height: 100vh;
+}
+.photo_hero-div{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem;
+}
+
+/* Gallery */
+
+.photo_gallery-section{
+    padding: 2rem;
+    background-color: black;
+}
+.photo_gallery-h3{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+}
+.photo_gallery-span.yellow{
+    color: var(--third-color);
+}
+.photo_gallery-text-div{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(55, 55, 55);
+}
