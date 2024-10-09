@@ -29,5 +29,47 @@ height: 100vh;
 .photo_gallery-text-div{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: rgb(55, 55, 55);
+}
+.photo_gallery-text-div span{
+    text-align: center;
+}
+
+/* Gallery Grid */
+
+.gallery_grid-section{
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+.gallery_grid-block{
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+}
+.gallery_grid-container-collumn{
+    display: flex;
+    width: 100%;
+    flex: 1;
+}
+.gallery_grid-container-collumn.square{
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.gallery_grid-picture-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.gallery_grid-picture-container img{
+    width: 100%;
+    object-fit: cover;
+
 }

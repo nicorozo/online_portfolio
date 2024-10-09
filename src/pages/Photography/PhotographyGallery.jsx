@@ -1,3 +1,5 @@
+import PhotographygallryGrid from "./PhotographygallryGrid";
+
 const PhotographyGallery = () => {
   return (
     <section className="photo_gallery-section">
@@ -8,8 +10,9 @@ const PhotographyGallery = () => {
       <div className="photo_gallery-text-div">
         <span>Made in Colombia</span>
         <span>-</span>
-        <span>Forged by the world</span>
+        <span>Located in Poland</span>
       </div>
+      <PhotographygallryGrid />
     </section>
   );
 };
