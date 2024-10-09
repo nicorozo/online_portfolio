@@ -1,0 +1,28 @@
+.contact_section{
+    background-color: black;
+    padding:2rem;
+}
+.contact_title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+.contact_title-divider{
+    display: flex;
+    width: 100%;
+
+    align-items: center;
+}
+.contact_title-line{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+
+}
+.contact_title{
+
+    font-size: 5rem;
+}

@@ -1,3 +1,4 @@
+import Contact from "../../utils/Contact";
 import PhotographyGallery from "./PhotographyGallery";
 import PhotographyHero from "./PhotographyHero";
 import "./PhotographyPage.css";
@@ -7,6 +8,7 @@ const PhotohtaphyPage = () => {
     <section className="photo_main">
       <PhotographyHero />
       <PhotographyGallery />
+      <Contact></Contact>
     </section>
   );
 };
