@@ -35,11 +35,11 @@ const ContactForm = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-  /* const sendEmail = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
     if (validateForm()) {
-      emailjs.send(SERVICE_ID, TEMPLATE_ID, form, USER_ID).then(
+      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID).then(
         () => {
           setSuccessMessage("Message successfully sent!");
         },
@@ -48,18 +48,18 @@ const ContactForm = () => {
         }
       );
     }
-  }; */
-  function testSend(e) {
+  };
+  /* function testSend(e) {
     e.preventDefault();
 
     if (validateForm()) {
-      console.log(formData, form);
+      console.log(formData, form.current);
       setSuccessMessage("Sent!");
     }
-  }
+  } */
 
   return (
-    <form ref={form} onSubmit={testSend} className="contact_form">
+    <form ref={form} onSubmit={sendEmail} className="contact_form">
       <div className="contact_form-group">
         <label>Name:</label>
         <input
