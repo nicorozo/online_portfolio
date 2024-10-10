@@ -55,7 +55,7 @@ align-items: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #F06711;
+  background-color: var(--orange);
   width: 2px;
   height: 90%;
 }

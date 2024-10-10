@@ -31,5 +31,62 @@
 
 /* Form */
 .contact_form{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact_form-group{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: "Roboto";
+    color: var(--gray);
+    max-width: 500px;
+}
+.contact_form-group.radio{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+.contact_form-group label{
+    margin: .5rem 0;
+}
+.contact_form-text-input{
+
+    padding: 1rem;
+}
+.contact_form-options-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.contact_form-options-collumn{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: .5rem;
+}
+.contact_form-options-div{
+    display: flex;
+    gap: .5rem;
+    justify-content: start;
+    align-items: center;
+}
+.contact_form-options-div input{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.contact_form-text-input.message{
+    height: 4rem;
+}
+.contact_form-send{
+    display: flex;
+    padding: 1rem 2rem;
+    border: 1px solid var(--orange);
+    background-color: black;
+    color: var(--orange);
+    font-size: 1rem;
+    font-weight: bold;
 }

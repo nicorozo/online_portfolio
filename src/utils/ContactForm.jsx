@@ -5,14 +5,18 @@ const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const USER_ID = import.meta.env.VITE_EMAILJS_USER_ID;
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({ name: "", phone: "" });
-  const [errors, setErrors] = useState({ name: "", phone: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    message: "",
+  });
+  const [errors, setErrors] = useState({ name: "", phone: "", message: "" });
   const [successMessage, setSuccessMessage] = useState("");
   const form = useRef();
 
   const validateForm = () => {
     let formValid = true;
-    let newErrors = { name: "", phone: "" };
+    let newErrors = { name: "", phone: "", message: "" };
 
     // Name validation
     if (!formData.name.trim()) {
@@ -21,7 +25,7 @@ const ContactForm = () => {
     }
 
     // Phone number validation (basic regex for phone numbers)
-    const phoneRegex = /^\d{10}$/; // Simple check for 10-digit numbers
+    const phoneRegex = /^\d{9}$/; // Simple check for 10-digit numbers
     if (!formData.phone || !phoneRegex.test(formData.phone)) {
       newErrors.phone = "Please enter a valid 10-digit phone number";
       formValid = false;
@@ -61,29 +65,79 @@ const ContactForm = () => {
   return (
     <form ref={form} onSubmit={sendEmail} className="contact_form">
       <div className="contact_form-group">
-        <label>Name:</label>
+        <label>Name</label>
         <input
           type="text"
           name="name"
           value={formData.name}
           onChange={handleChange}
+          className="contact_form-text-input"
         />
         {errors.name && <span className="error">{errors.name}</span>}
       </div>
 
       <div className="contact_form-group">
-        <label>Phone:</label>
+        <label>Phone</label>
         <input
           type="text"
           name="phone"
           value={formData.phone}
           onChange={handleChange}
+          className="contact_form-text-input"
         />
         {errors.phone && <span className="error">{errors.phone}</span>}
       </div>
+      <div className="contact_form-group radio">
+        <span className="contact_form-options-title">
+          Any project or idea in mind?
+        </span>
+        <div className="contact_form-options-container">
+          <div className="contact_form-options-collumn">
+            <div className="contact_form-options-div">
+              <input type="radio" name="photo_type" id="photo_portrait" />
+              <label htmlFor="photo_portrait">Portrait</label>
+            </div>
+            <div className="contact_form-options-div">
+              <input type="radio" name="photo_type" id="photo_family" />
+              <label htmlFor="photo_family">Family</label>
+            </div>
+            <div className="contact_form-options-div">
+              <input type="radio" name="photo_type" id="photo_boudoir" />
+              <label htmlFor="photo_boudoir">Boudoir</label>
+            </div>
+
+            <div className="contact_form-options-div">
+              <input type="radio" name="photo_type" id="photo_event" />
+              <label htmlFor="photo_event">Event</label>
+            </div>
+
+            <div className="contact_form-options-div">
+              <input type="radio" name="photo_type" id="photo_wedding" />
+              <label htmlFor="photo_wedding">Wedding</label>
+            </div>
+
+            <div className="contact_form-options-div">
+              <input type="radio" name="photo_type" id="photo_other" />
+              <label htmlFor="photo_other">Other</label>
+            </div>
+          </div>
+        </div>
+        <div className="contact_form-group">
+          <label htmlFor="contact_message">Message</label>
+          <input
+            type="text"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            className="contact_form-text-input message"
+          />
+        </div>
+      </div>
 
       {successMessage && <p className="success">{successMessage}</p>}
-      <button type="submit">Send</button>
+      <button type="submit" className="contact_form-send">
+        Send
+      </button>
     </form>
   );
 };
