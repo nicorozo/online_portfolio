@@ -23,6 +23,13 @@
 
 }
 .contact_title{
-
+    font-weight: bolder;
     font-size: 5rem;
+    letter-spacing: 5px;
+    line-height: .9;
+}
+
+/* Form */
+.contact_form{
+    
 }

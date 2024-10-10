@@ -1,4 +1,5 @@
 import "./Contact.css";
+import ContactForm from "./ContactForm";
 const Contact = () => {
   return (
     <section className="contact_section">
@@ -13,6 +14,7 @@ const Contact = () => {
           <span className="contact_title">TACT</span>
         </div>
       </h4>
+      <ContactForm />
     </section>
   );
 };
