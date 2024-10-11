@@ -1,11 +1,11 @@
-import NavPages from "../../utils/NavPages";
+import DevHero from "./DevHero";
+import "./DevPage.css";
 
 const DevPage = () => {
   return (
-    <div>
-      <NavPages pageName={"Developer"} />
-      DevPage
-    </div>
+    <section className="dev_main">
+      <DevHero></DevHero>
+    </section>
   );
 };
 

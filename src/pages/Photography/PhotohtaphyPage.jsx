@@ -1,4 +1,4 @@
-import Contact from "../../utils/Contact";
+import Contact from "../../utils/Contact/Contact";
 import PhotographyGallery from "./PhotographyGallery";
 import PhotographyHero from "./PhotographyHero";
 import "./PhotographyPage.css";

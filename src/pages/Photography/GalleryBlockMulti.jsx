@@ -3,7 +3,7 @@ const GalleryBlockMulti = ({ inverted }) => {
     <div className={`gallery_grid-block ${inverted && "inverted"}`}>
       <div className="gallery_grid-container-collumn">
         <div className="gallery_grid-picture-container">
-          <img src="./gallery/NicoR (1).jpg" alt="Portrait" />
+          <img src="./gallery/NicoR (9).jpg" alt="Portrait" />
         </div>
       </div>
       <div className="gallery_grid-container-collumn square">

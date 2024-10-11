@@ -25,9 +25,9 @@ const ContactForm = () => {
     }
 
     // Phone number validation (basic regex for phone numbers)
-    const phoneRegex = /^\d{9}$/; // Simple check for 10-digit numbers
+    const phoneRegex = /^\d{9}$/; // Change for more flexible international numbers
     if (!formData.phone || !phoneRegex.test(formData.phone)) {
-      newErrors.phone = "Please enter a valid 10-digit phone number";
+      newErrors.phone = "Please enter a valid 9-digit phone number";
       formValid = false;
     }
 
