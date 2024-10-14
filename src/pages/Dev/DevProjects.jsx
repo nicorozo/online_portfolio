@@ -7,14 +7,14 @@ const DevProjects = () => {
       tags: ["React", "Next.js"],
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. ",
-      image: "/projects/Home-web.gif",
+      image: "../projects/Home-web.gif",
     },
     {
       title: "Poject 2",
       tags: ["React", "Next.js"],
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. ",
-      image: "/projects/Home-web.gif",
+      image: "./projects/Home-web.gif",
     },
   ];
   return (

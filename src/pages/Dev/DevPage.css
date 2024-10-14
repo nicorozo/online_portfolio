@@ -83,20 +83,63 @@
     gap: 2rem;
     width: 100%;
     box-sizing: border-box;
-    padding: 2rem;
+    /* padding: 2rem; */
   }
 
   
 .dev_pro-card{
   display: flex;
   width: 100%;
+  padding-right: 1rem;
+  box-sizing: border-box;
 }
 .dev_pro-card-line-container{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
 }
 .dev_pro-card-line{
   width: 2px;
   background-color: var(--orange);
   height: 100%;
+}
+.dev_pro-card-line.circle{
+  width: 15px;
+  height: 15px;
+  border-radius: 25px;
+  border: 6px   solid black;
+  position: absolute;
+  top: 6rem;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+.dev_pro-card-info-container{
+
+}
+.dev_pro-card-info-title{
+  font-size: 2rem;
+}
+.dev_pro-card-info-tags-container{
+  display: flex;
+  gap: 2rem;
+}
+.dev_pro-card-info-tag{
+  display: flex;
+  border: 1px solid var(--orange);
+  padding: 5px;
+  color: var(--orange); 
+}
+.dev_pro-card-info-description{
+  font-family: "Roboto";
+}
+.dev_pro-card-info-tag.button{
+  padding: 1rem;
+  border-radius: 0;
+  background-color: black;
+  margin: 1rem 0;
+}
+.dev_pro-card-img{
+  width: 100%;
 }

@@ -17,7 +17,8 @@ const DevProjectsCard = ({ title, tags, description, image }) => {
           })}
         </div>
         <p className="dev_pro-card-info-description">{description}</p>
-        <img src={image} alt="Project Image" />
+        <button className="dev_pro-card-info-tag button">See yourself</button>
+        <img src={image} alt="Project Image" className="dev_pro-card-img" />
       </div>
     </div>
   );
