@@ -11,12 +11,17 @@
 }
 .nav_pages-fixed{
   display: flex;
+  width:100%;
   color: var(--third-color);
     align-items: center;
-    margin: 1rem 1rem;
+    padding: 0rem 1rem;
     position: fixed;
     top: 0;
     left: 0;
+}
+.nav_pages-fixed.scrolled{
+  background-color: rgba(0, 0, 0, 0.89);
+  z-index: 10;
 }
 .nav_pages .logo{
     font-size: 24px;

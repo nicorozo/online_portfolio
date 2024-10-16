@@ -7,16 +7,16 @@ const USER_ID = import.meta.env.VITE_EMAILJS_USER_ID;
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
-    phone: "",
+    email: "",
     message: "",
   });
-  const [errors, setErrors] = useState({ name: "", phone: "", message: "" });
+  const [errors, setErrors] = useState({ name: "", email: "", message: "" });
   const [successMessage, setSuccessMessage] = useState("");
   const form = useRef();
 
   const validateForm = () => {
     let formValid = true;
-    let newErrors = { name: "", phone: "", message: "" };
+    let newErrors = { name: "", email: "", message: "" };
 
     // Name validation
     if (!formData.name.trim()) {
@@ -24,10 +24,11 @@ const ContactForm = () => {
       formValid = false;
     }
 
-    // Phone number validation (basic regex for phone numbers)
-    const phoneRegex = /^\d{9}$/; // Change for more flexible international numbers
-    if (!formData.phone || !phoneRegex.test(formData.phone)) {
-      newErrors.phone = "Please enter a valid 9-digit phone number";
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email validation regex
+
+    // Assuming you're validating formData.email
+    if (!formData.email || !emailRegex.test(formData.email)) {
+      newErrors.email = "Please enter a valid email address";
       formValid = false;
     }
 
@@ -45,6 +46,7 @@ const ContactForm = () => {
     if (validateForm()) {
       emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID).then(
         () => {
+          console.log(form.current);
           setSuccessMessage("Message successfully sent!");
         },
         (error) => {
@@ -77,59 +79,26 @@ const ContactForm = () => {
       </div>
 
       <div className="contact_form-group">
-        <label>Phone</label>
+        <label>Email</label>
         <input
-          type="text"
-          name="phone"
-          value={formData.phone}
+          type="email"
+          name="email"
+          value={formData.email}
           onChange={handleChange}
           className="contact_form-text-input"
         />
-        {errors.phone && <span className="error">{errors.phone}</span>}
+        {errors.email && <span className="error">{errors.email}</span>}
       </div>
       <div className="contact_form-group radio">
-        <span className="contact_form-options-title">
-          Any project or idea in mind?
-        </span>
-        <div className="contact_form-options-container">
-          <div className="contact_form-options-collumn">
-            <div className="contact_form-options-div">
-              <input type="radio" name="photo_type" id="photo_portrait" />
-              <label htmlFor="photo_portrait">Portrait</label>
-            </div>
-            <div className="contact_form-options-div">
-              <input type="radio" name="photo_type" id="photo_family" />
-              <label htmlFor="photo_family">Family</label>
-            </div>
-            <div className="contact_form-options-div">
-              <input type="radio" name="photo_type" id="photo_boudoir" />
-              <label htmlFor="photo_boudoir">Boudoir</label>
-            </div>
-
-            <div className="contact_form-options-div">
-              <input type="radio" name="photo_type" id="photo_event" />
-              <label htmlFor="photo_event">Event</label>
-            </div>
-
-            <div className="contact_form-options-div">
-              <input type="radio" name="photo_type" id="photo_wedding" />
-              <label htmlFor="photo_wedding">Wedding</label>
-            </div>
-
-            <div className="contact_form-options-div">
-              <input type="radio" name="photo_type" id="photo_other" />
-              <label htmlFor="photo_other">Other</label>
-            </div>
-          </div>
-        </div>
         <div className="contact_form-group">
-          <label htmlFor="contact_message">Message</label>
+          <label htmlFor="contact_message">Any project or idea in mind?</label>
           <input
             type="text"
             name="message"
             value={formData.message}
             onChange={handleChange}
             className="contact_form-text-input message"
+            id="contact_message"
           />
         </div>
       </div>
