@@ -6,6 +6,9 @@
 .photo_hero-section{
 display: flex;
 height: 100vh;
+background-position: center;
+background-size: cover;
+
 }
 .photo_hero-div{
     display: flex;

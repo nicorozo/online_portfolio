@@ -1,4 +1,5 @@
 const GalleryBlockMulti = ({ inverted, verticalPicture, square1, square2 }) => {
+  const smallFrame = square2 ? square2 : "";
   return (
     <div className={`gallery_grid-block ${inverted && "inverted"}`}>
       <div className="gallery_grid-container-collumn">
@@ -12,7 +13,7 @@ const GalleryBlockMulti = ({ inverted, verticalPicture, square1, square2 }) => {
           <img src={square1} alt="Portrait" />
         </div>
         <div className={`gallery_grid-picture-container ${!square2 && "none"}`}>
-          <img src={`${!square2 && square1}`} alt="Portrait" />
+          <img src={smallFrame} alt="Portrait" />
         </div>
       </div>
     </div>

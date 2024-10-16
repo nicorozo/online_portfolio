@@ -1,14 +1,27 @@
+import { useEffect, useState } from "react";
 import NavPages from "../../utils/NavPages";
 
 const PhotographyHero = () => {
+  const heroPictures = ["PhHero2", "PhHero3", "PhHero1"];
+  const [currentPictureIndex, setCurrentPictureIndex] = useState(0);
+
+  useEffect(() => {
+    const changePicture = () => {
+      setCurrentPictureIndex((index) => (index + 1) % heroPictures.length);
+    };
+
+    const interval = setInterval(changePicture, 6000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <section
       className="photo_hero-section"
       style={{
-        background:
-          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./hero1.jpg)",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./${heroPictures[currentPictureIndex]}.jpg)`,
       }}
     >
       <NavPages pageName={"photography"} />
