@@ -8,6 +8,7 @@
   --gray: #666666;
   --dark-gray: #0C0C0C;
   --orange:#F06711;
+  --green:rgb(137, 255, 2);
 
   --border-15:15px;
   --border-10:10px;
@@ -31,7 +32,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: rgb(137, 255, 2);
+  color: var(--green);  
 }
 
 body {
@@ -59,11 +60,13 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: var(--green);
+  color: var(--green);
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: var(--green) 4px auto -webkit-focus-ring-color;
+  color: var(--green);
 }
 
 @media screen and (max-width:620px) {

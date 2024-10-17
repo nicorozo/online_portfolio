@@ -117,9 +117,6 @@
   left: 50%;
   transform: translate(-50%, -50%)
 }
-/* .dev_pro-card-info-container{
-
-} */
 .dev_pro-card-info-title{
   font-size: 2rem;
 }
@@ -137,6 +134,7 @@
   font-family: "Roboto";
 }
 .dev_pro-card-info-tag.button{
+  display: inline-block;
   padding: 1rem;
   border-radius: 0;
   background-color: black;
@@ -144,4 +142,5 @@
 }
 .dev_pro-card-img{
   width: 100%;
+  border-radius: 10px;
 }

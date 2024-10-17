@@ -1,4 +1,4 @@
-const DevProjectsCard = ({ title, tags, description, image }) => {
+const DevProjectsCard = ({ title, tags, description, image, link }) => {
   return (
     <div className="dev_pro-card">
       <div className="dev_pro-card-line-container">
@@ -17,7 +17,9 @@ const DevProjectsCard = ({ title, tags, description, image }) => {
           })}
         </div>
         <p className="dev_pro-card-info-description">{description}</p>
-        <button className="dev_pro-card-info-tag button">See yourself</button>
+        <a href={link} className="dev_pro-card-info-tag button">
+          See yourself
+        </a>
         <img src={image} alt="Project Image" className="dev_pro-card-img" />
       </div>
     </div>

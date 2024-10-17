@@ -3,11 +3,12 @@ import DevProjectsCard from "./DevProjectsCard";
 const DevProjects = () => {
   const cardInfo = [
     {
-      title: "Poject 1",
+      title: "Wolno",
       tags: ["React", "Next.js"],
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. ",
-      image: "../projects/Home-web.gif",
+        "Homepage for Wolno, Website solutions for small and medium companies ",
+      link: "https://my-site-react-six.vercel.app/",
+      image: "../projects/wolno.png",
     },
     {
       title: "Poject 2",
