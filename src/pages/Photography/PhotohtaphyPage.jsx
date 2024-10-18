@@ -8,6 +8,14 @@ const PhotohtaphyPage = () => {
     <section className="photo_main">
       <PhotographyHero />
       <PhotographyGallery />
+      <div className="photo_a-website-container">
+        <a
+          href="https://nicorozo.mypixieset.com/portfolio/"
+          className="photo_a-website"
+        >
+          More Pictures?
+        </a>
+      </div>
       <Contact></Contact>
     </section>
   );

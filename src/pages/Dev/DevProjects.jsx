@@ -11,6 +11,14 @@ const DevProjects = () => {
       image: "../projects/wolno.png",
     },
     {
+      title: "Novel Prize API",
+      tags: ["React", "Tailwind"],
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. ",
+      link: "https://bright-stardust-02cb60.netlify.app/",
+      image: "./projects/Home-web.gif",
+    },
+    {
       title: "Poject 2",
       tags: ["React", "Next.js"],
       description:

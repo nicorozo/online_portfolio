@@ -25,12 +25,18 @@ background-size: cover;
     background-color: black;
 }
 .photo_gallery-h3{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
     font-size: 2.5rem;
-    margin: 0;
+    margin: 2rem 0;
+    line-height: 2.6rem;
 }
 .photo_gallery-span.yellow{
     color: var(--third-color);
+}
+.gallery_grid-heading-container p{
+    margin: 0;
 }
 .photo_gallery-text-div{
     display: flex;
@@ -84,5 +90,18 @@ background-size: cover;
 .gallery_grid-picture-container img{
     width: 100%;
     object-fit: cover;
+
+}
+
+.photo_a-website-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.photo_a-website{
+    padding: 1rem 2rem;
+
+    border: 2px solid var(--third-color);
 
 }
