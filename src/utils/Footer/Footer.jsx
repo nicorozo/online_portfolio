@@ -1,4 +1,4 @@
-import "./footer.css";
+import "./Footer.css";
 import { IoLogoInstagram, IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
 
 const Footer = () => {
