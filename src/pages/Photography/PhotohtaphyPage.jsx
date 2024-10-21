@@ -1,4 +1,5 @@
 import Contact from "../../utils/Contact/Contact";
+import Footer from "../../utils/Footer/Footer";
 import PhotographyGallery from "./PhotographyGallery";
 import PhotographyHero from "./PhotographyHero";
 import "./PhotographyPage.css";
@@ -17,6 +18,7 @@ const PhotohtaphyPage = () => {
         </a>
       </div>
       <Contact></Contact>
+      <Footer></Footer>
     </section>
   );
 };

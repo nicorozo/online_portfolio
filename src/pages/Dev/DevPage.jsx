@@ -3,6 +3,7 @@ import "./DevPage.css";
 import DevProjects from "./DevProjects";
 import DevTechnologies from "./DevTechnologies";
 import Contact from "../../utils/Contact/Contact";
+import Footer from "../../utils/Footer/Footer";
 
 const DevPage = () => {
   return (
@@ -11,6 +12,7 @@ const DevPage = () => {
       <DevTechnologies></DevTechnologies>
       <DevProjects />
       <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 };
