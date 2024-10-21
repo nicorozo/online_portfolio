@@ -13,16 +13,56 @@
     padding: 2rem;
     flex-direction: column;
     justify-content: flex-end;
-}
-.dev_hero-video-container{
+  }
+  .dev_hero-text-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     flex-grow: 1;
 }
-.dev_hero-video-container img{
-    width: 100%;
+.dev_hero-span{
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 2.8rem;
+  color: white;
+  opacity: 0;
+  animation: textAnimation 1s ease-in-out forwards;
+}
+.dev_hero-span.yellow{
+  color: var(--third-color);
+}
+@keyframes textAnimation {
+  from{opacity: 0;}
+  to{opacity: 100;}
+}
+.dev_hero-span.white{
+  animation-delay: .5s;
+}
+
+.dev_hero-div{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.dev_hero-tag{
+  padding: 0 1rem ;
+  opacity: 0;
+  animation: textAnimation 1s ease-in-out forwards;
+}
+.dev_hero-tag.st{
+  animation-delay: 1s;
+}
+.dev_hero-tag.rd{
+  animation-delay: 1.5s;
+}
+.dev_hero-tag.nd{
+  border-left: 1px solid ;
+  border-right: 1px solid ;
+  animation-delay: 2s;
 }
 
 /* Technologies */

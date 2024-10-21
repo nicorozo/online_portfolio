@@ -18,7 +18,22 @@ background-size: cover;
     justify-content: flex-end;
     padding: 2rem;
 }
-
+.photo_hero-div h2,p{
+    opacity: 0;
+    animation: photoText .5s ease-in-out forwards;
+    
+}
+.photo_hero-h2{
+    animation-delay: .5s;
+}
+.photo_hero-text{
+    animation-delay: 1s;
+}
+    
+    @keyframes photoText {
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
 /* Gallery */
 
 .photo_gallery-section{
