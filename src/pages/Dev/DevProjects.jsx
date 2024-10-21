@@ -19,11 +19,11 @@ const DevProjects = () => {
       image: "./projects/Home-web.gif",
     },
     {
-      title: "Poject 2",
-      tags: ["React", "Next.js"],
+      title: "Weather App",
+      tags: ["JS", "Vite", "WeatherAPI"],
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. ",
-      image: "./projects/Home-web.gif",
+        "Simple weather app with option to compare different locations.",
+      image: "../projects/weather.png",
     },
   ];
   return (

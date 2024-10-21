@@ -1,5 +1,5 @@
 import "./footer.css";
-import { IoLogoInstagram, IoLogoLinkedin } from "react-icons/io5";
+import { IoLogoInstagram, IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
 
 const Footer = () => {
   return (
@@ -34,6 +34,9 @@ const Footer = () => {
           href="https://www.linkedin.com/in/nicolas-arenas-aba585198/"
         >
           <IoLogoLinkedin />
+        </a>
+        <a className="footer_social-icon" href="https://github.com/nicorozo">
+          <IoLogoGithub />
         </a>
       </div>
       <p>© 2024 All rights reserved.</p>
