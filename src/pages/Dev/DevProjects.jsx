@@ -1,3 +1,4 @@
+import DevHeader from "../../utils/DevHeader/DevHeader";
 import DevProjectsCard from "./DevProjectsCard";
 
 const DevProjects = () => {
@@ -28,7 +29,7 @@ const DevProjects = () => {
   ];
   return (
     <section className="dev_projects">
-      <h3 className="dev_tech-title-container">PROJECTS</h3>
+      <DevHeader>PROJECTS</DevHeader>
       <div className="dev_projects-grid">
         {cardInfo.map((project) => {
           return <DevProjectsCard key={project.title} {...project} />;

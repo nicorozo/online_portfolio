@@ -1,6 +1,7 @@
 import { FaJs, FaReact, FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { AiOutlinePython } from "react-icons/ai";
 import { SiNextdotjs } from "react-icons/si"; // Next.js icon
+import DevHeader from "../../utils/DevHeader/DevHeader";
 
 const DevTechnologies = () => {
   const icons = [
@@ -13,7 +14,7 @@ const DevTechnologies = () => {
   ];
   return (
     <div className="dev_tech">
-      <h3 className="dev_tech-title-container">TECHNOLOGIES</h3>
+      <DevHeader>TECHNOLOGIES</DevHeader>
       <div className="dev_tech-icon-grid">
         {icons.map((item) => (
           <div key={item.name} className="dev_tech-icon-container">

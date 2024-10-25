@@ -4,12 +4,14 @@ import DevProjects from "./DevProjects";
 import DevTechnologies from "./DevTechnologies";
 import Contact from "../../utils/Contact/Contact";
 import Footer from "../../utils/Footer/Footer";
+import DevInfo from "./DevInfo";
 
 const DevPage = () => {
   return (
     <div className="dev_main">
       <DevHero></DevHero>
       <DevTechnologies></DevTechnologies>
+      <DevInfo />
       <DevProjects />
       <Contact></Contact>
       <Footer></Footer>
