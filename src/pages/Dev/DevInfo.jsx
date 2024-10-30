@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DevHeader from "../../utils/DevHeader/DevHeader";
 import { FaArrowLeft } from "react-icons/fa";
+import AboutMeTech from "./AboutMe/AboutMeTech";
+import AboutMeOther from "./AboutMe/AboutMeOther";
 
 const DevInfo = () => {
   const [isDisabled, setIsDisabled] = useState(false);
   const [activeInfo, setActiveInfo] = useState("");
+  const [modal, setModal] = useState();
   const buttonA = "dev_info-A";
   const buttonB = "dev_info-B";
 
@@ -18,24 +21,33 @@ const DevInfo = () => {
     setIsDisabled(false);
   }
 
-  const modal = (
-    <div className="dev_info-interactive-modal">
-      <button onClick={closeModal} className="dev_info-modal-arrow">
-        <FaArrowLeft className="dev_info-modal-arrow-icon" />
-      </button>
-      <h4>{activeInfo == buttonA ? buttonA : buttonB}</h4>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
-        possimus ad illo voluptatem esse magnam at? Mollitia consequuntur
-        molestiae doloribus porro ratione itaque a minus ullam provident. Optio,
-        excepturi quod?
-      </p>
-    </div>
-  );
+  useEffect(() => {
+    setModal(() => {
+      if (activeInfo == buttonA) {
+        return (
+          <AboutMeTech>
+            <button onClick={closeModal} className="dev_info-modal-arrow">
+              <FaArrowLeft className="dev_info-modal-arrow-icon" />
+            </button>
+          </AboutMeTech>
+        );
+      }
+      if (activeInfo == buttonB) {
+        return (
+          <AboutMeOther>
+            <button onClick={closeModal} className="dev_info-modal-arrow">
+              <FaArrowLeft className="dev_info-modal-arrow-icon" />
+            </button>
+          </AboutMeOther>
+        );
+      } /* else {
+        console.error("activeInfo: ", activeInfo);
+      } */
+    });
+  }, [activeInfo]);
 
   return (
     <section className="dev_info-section">
-      <DevHeader>ABOUT ME</DevHeader>
       <div className="dev_info-container">
         <div className="dev_info-interactive-container">
           <button
@@ -48,7 +60,11 @@ const DevInfo = () => {
             Technical Info
           </button>
           <div className="dev_info-interactive-movable">
-            {isDisabled ? modal : "Information"}
+            {isDisabled ? (
+              modal
+            ) : (
+              <DevHeader>LET&apos;S WORK TOGETHER</DevHeader>
+            )}
           </div>
 
           <button
@@ -58,7 +74,7 @@ const DevInfo = () => {
             }`}
             onClick={(e) => interactive(e)}
           >
-            Non-Technical Info
+            More about me
           </button>
 
           {/* modal */}
