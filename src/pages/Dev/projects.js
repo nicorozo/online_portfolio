@@ -1,5 +1,13 @@
 const projects = [
   {
+    title: "Espacio",
+    tags: ["React", "Next.js", "MUI"],
+    description:
+      "Landing page for Espacio.pl, current running project in Wroclaw",
+    link: "https://www.espacio.pl/",
+    image: "../projects/espacio.png",
+  },
+  {
     title: "Wolno",
     tags: ["React", "Next.js"],
     description:
@@ -13,7 +21,7 @@ const projects = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. ",
     link: "https://bright-stardust-02cb60.netlify.app/",
-    image: "./projects/Home-web.gif",
+    image: "./projects/nobel.png",
   },
   {
     title: "Weather App",
