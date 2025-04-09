@@ -7,6 +7,7 @@ const projects = [
     link: "https://www.espacio.pl/",
     image: "../projects/espacio.png",
   },
+
   {
     title: "Wolno",
     tags: ["React", "Next.js"],
@@ -14,6 +15,20 @@ const projects = [
       "Homepage for Wolno, Website solutions for small and medium companies ",
     link: "https://my-site-react-six.vercel.app/",
     image: "../projects/wolno.png",
+  },
+  {
+    title: "Elaborum",
+    tags: ["JS"],
+    description: "Homepage for Elaborum ",
+    link: "https://github.com/nicorozo",
+    image: "../projects/elaborumSite.png",
+  },
+  {
+    title: "Elite State",
+    tags: ["React", "Vite"],
+    description: "Mockup on React for Real State company",
+    link: "https://nicorozo.github.io/elite_estate/",
+    image: "../projects/EliteEstate.png",
   },
   {
     title: "Novel Prize API",
